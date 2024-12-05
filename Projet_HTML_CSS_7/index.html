@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site voyage</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER  -->
+    <section id="container">
+        <header>
+            <div class="logo">
+                <p>Voyage</p>
+            </div>
+            <ul class="menu">
+                <li><a href="#container">acceuil</a></li>
+                <li><a href="#a-propos">à propos</a></li>
+                <li><a href="#gallerie">destination</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+
+            <!-- ----- responsive_menu-----  -->
+            <div class="menu-toggle"></div>
+            <!-- ----- responsive_menu-----  -->
+
+        </header>
+        <div class="container-text">
+            <h1>Voyager ,Une passion</h1>
+            <p>Rester c'est exister , mais voyager c'est vivre</p>
+            <a href="#">Reserver un vol</a>
+        </div>
+    </section>
+
+    <!-- HEADER  -->
+
+    <!-- 1e SECTION*home  -->
+    <section id="a-propos">
+        <div>
+            <p class="title-section">à propos</p>
+            <h1 class="sub-title-section">Qui sommes nous</h1>
+            <div class="description-photo">
+                <div class="desc">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste nulla ducimus voluptas fugiat, molestiae architecto officia tempora. Nemo vitae omnis maxime dicta, possimus odit quos ex necessitatibus fugit quasi voluptatem.</p>
+                    <H2>NOS SERVICE</H2>
+                    <div class="list-services">
+                        <div class="service">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <p>RAPIDE</p>
+                        </div>
+                        <div class="service">
+                            <i class="fas fa-money-check-alt"></i>
+                            <p>ECONOMIQUE</p>
+                        </div>
+                        <div class="service">
+                            <i class="fas fa-check"></i>
+                            <p>FIABLE</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="./image-descr.jpg">
+            </div>
+        </div>
+    </section>        
+    <!-- 1e SECTION*home  -->
+
+
+
+    <!-- 2e section  -->
+    <section id="gallerie">
+        <p class="title-section">DESTINATION</p>
+        <h1 class="sub-title-section">les pays de vos reves</h1>
+        <div class="list-photos">
+            <div class="gallerie-img">
+                <img src="./chine.jpg" alt="">
+                <div class="show-country"><p>CHINE</p></div>
+            </div>
+            <div class="gallerie-img">
+                <img src="./afrique.jpg" alt="">
+                <div class="show-country"><p>BENIN</p></div>
+            </div>
+            <div class="gallerie-img">
+                <img src="./paris.jpg" alt="">
+                <div class="show-country"><p>PARIS</p></div>
+            </div>
+            <div class="gallerie-img">
+                <img src="./italie.jpg" alt="">
+                <div class="show-country"><p>ITALIE</p></div>
+            </div>
+        </div>
+
+    </section>
+    <!-- 2e section  -->
+
+
+
+    <!-- 3e section  -->
+    <section id="contact">
+        <p class="title-section">CONTACT</p>
+        <h1 class="sub-title-section">formilaire de contact</h1>
+        <div>
+            <form action="">
+                <label >Adresse Mail</label>
+                <input type="text" placeholder="Ex: azerty@gmail.com">
+                <label>Message</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Votre messag..."></textarea>
+                <input type="submit" value="ENVOYER">
+            </form>
+            <div class="social">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="images-contact">
+                <img src="./image-contact.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- 3e section  -->
+
+
+
+    <!--FOOTER -->
+    <footer>
+        <p>Copyright Ernest-Dev youtube </p>
+    </footer>
+    <!-- FOOTER -->
+
+
+
+
+
+    <!-- js  -->
+    <script>
+        var menu_toggle = document.querySelector('header .menu-toggle');   //faut pas oublier le point devant 'menu-toggle'
+        var menu= document.querySelector('header .menu')
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu.classList.toggle('responsive');
+            
+        }
+    </script>
+
+    <!-- js  -->
+
+
+
+</body>
+</html>

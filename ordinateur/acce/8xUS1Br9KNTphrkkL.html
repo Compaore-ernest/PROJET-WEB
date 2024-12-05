@@ -1,0 +1,249 @@
+<html><head><base href="https://ai-computer-recommender.com/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Computer Recommender - Personalized Tech Solutions</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    .navbar-brand img {
+        height: 40px;
+    }
+    .hero {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1920x1080?text=AI+Computer+Recommender') no-repeat center center;
+        background-size: cover;
+        color: white;
+        padding: 100px 0;
+    }
+    .section {
+        padding: 80px 0;
+    }
+    .card {
+        transition: transform 0.3s;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    .testimonial-carousel .carousel-item {
+        padding: 20px;
+    }
+    .partner-logo {
+        max-width: 150px;
+        filter: grayscale(100%);
+        transition: filter 0.3s;
+    }
+    .partner-logo:hover {
+        filter: grayscale(0%);
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img src="https://via.placeholder.com/150x50?text=AI+Comp+Rec" alt="AI Computer Recommender Logo" width="150" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#system">Our System</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/privacy-policy">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">AI-Powered Computer Recommendations</h1>
+            <p class="lead mb-5">Get personalized computer recommendations tailored to your needs and budget.</p>
+            <a href="/recommendation-form" class="btn btn-primary btn-lg">Get Started</a>
+        </div>
+    </header>
+
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-laptop me-2"></i>Personal Recommendations</h5>
+                            <p class="card-text">Get tailored computer recommendations based on your specific needs and budget.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-building me-2"></i>Business Solutions</h5>
+                            <p class="card-text">Comprehensive IT solutions and advice for companies of all sizes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-truck me-2"></i>Delivery & Setup</h5>
+                            <p class="card-text">Convenient delivery to your location and optional setup service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="system" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">How Our System Works</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/600x400?text=System+Architecture" alt="AI System Architecture" class="img-fluid rounded" width="600" height="400">
+                </div>
+                <div class="col-md-6">
+                    <h3>AI-Powered Recommendations</h3>
+                    <p>Our advanced AI system uses cutting-edge technology to provide you with the best computer recommendations:</p>
+                    <ul>
+                        <li>User Requirements Analysis</li>
+                        <li>LangChain for Natural Language Processing</li>
+                        <li>Multiple LLMs for Comprehensive Evaluation</li>
+                        <li>Tailored Results Based on Your Needs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Customers Say</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-carousel text-center">
+                            <p class="lead">"The AI recommendation was spot-on! I got exactly the computer I needed for my work."</p>
+                            <p><strong>- Sarah J., Graphic Designer</strong></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-carousel text-center">
+                            <p class="lead">"As a small business owner, the company-wide IT advice was invaluable. Highly recommended!"</p>
+                            <p><strong>- Mark T., CEO of TechStart</strong></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-carousel text-center">
+                            <p class="lead">"The delivery and setup service made getting my new computer hassle-free. Great experience!"</p>
+                            <p><strong>- Emily R., Student</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Partners</h2>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-4 col-md-2 mb-4">
+                    <img src="https://via.placeholder.com/150x75?text=Partner+1" alt="Partner 1 Logo" class="img-fluid partner-logo" width="150" height="75">
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <img src="https://via.placeholder.com/150x75?text=Partner+2" alt="Partner 2 Logo" class="img-fluid partner-logo" width="150" height="75">
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <img src="https://via.placeholder.com/150x75?text=Partner+3" alt="Partner 3 Logo" class="img-fluid partner-logo" width="150" height="75">
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <img src="https://via.placeholder.com/150x75?text=Partner+4" alt="Partner 4 Logo" class="img-fluid partner-logo" width="150" height="75">
+                </div>
+                <div class="col-4 col-md-2 mb-4">
+                    <img src="https://via.placeholder.com/150x75?text=Partner+5" alt="Partner 5 Logo" class="img-fluid partner-logo" width="150" height="75">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2023 AI Computer Recommender. All rights reserved.</p>
+            <a href="/privacy-policy" class="text-white">Privacy Policy</a> | 
+            <a href="/terms-of-service" class="text-white">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Smooth scrolling for navigation links
+            $('a.nav-link').on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 70
+                    }, 800);
+                }
+            });
+
+            // Form submission
+            $('#contactForm').on('submit', function(e) {
+                e.preventDefault();
+                // Here you would typically send the form data to your server
+                // For this example, we'll just show an alert
+                alert('Thank you for your message. We will get back to you soon!');
+                this.reset();
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <!-- NAVBAR DEBUT -->
+    <nav>
+        <ul>
+            <!-- le debut -->
+            <li><span style="color:red" class="material-icons ">density_medium</span></li>
+            <li>Notre Carte</li>
+            <li>Le coin Famille</li>
+            <li>Recrutez-Noux!</li>
+            <li>Burger Kara</li>
+
+            <!-- le milieu -->
+            <img class="img"src="./burger.png" alt="burger">
+            <li class="localisation"><span class="material-icons">location_on</span></li>
+            <!-- <li class="couronne"><span class="material-icons">crowdsource</span></li> -->
+            
+
+            <!-- la fin -->
+            <li ><span class="material-icons fa_couronne" >crowdsource
+                
+                    <div class="login">
+                        <button><span>se connecter</span></button>
+                        <hr>
+                        <p>Vous n'avez pas encore de compte ?</p>
+                        <button><span>rejoignez le kingdom</span></button>
+                    </div>
+                
+            </span></li>
+            <button class="click-bouton"><span class="click">Click & collect</span> </button>
+        </ul>
+        
+    </nav>
+    <!-- NAVBAR FIN -->
+
+
+
+    <!-- DEBUT PREMIERE SECTION *HOME -->
+    <section class="home">
+        <button><span>Decouvrer-le</span></button>
+    </section>
+    <!-- FIN PREMIERE SECTION *HOME -->
+
+
+    <!-- DEBUT DEUXIEME SECTION *FOODS -->                            <!--On met un 'div foods list' avant le 'div des image' car car le 'div des image' doit avoir un titre -->  
+    <section class="foods">
+        <h1>chaud bouillant</h1>
+        <p>Decouvrez les actualités Burger King</p>
+        <div class="foods-list">
+            <div class="box">
+                <img src="./image4.jpeg" >
+                <h3> desserts glacés</h3>
+            </div>
+            <div class="box">
+                <img id="imag5" src="./image5.jpeg" >
+                <h3> en savoir plus</h3>
+            </div>
+            <div class="box">
+                <img id="imag6" src="./image6.jpeg" >
+                <h3>en ce moment</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- FIN DEUXIEME SECTION *FOODS -->
+    <!-- D'abord on a un 'DIV' qui prend tous les images,et a l'interieur
+    c'est un 'div' pour chaque image et ils ont la mm 'class':
+    si on a une seul legend:
+    -a l'interieur de cet 'div' on met: l'image "img" et une legend "h3",
+    sinon:
+    -a l'interieur de cet 'div' on met: l'image "img" et un autr 'div' qui va contenir tous les "h3" ou 'p' -->
+
+
+
+    <!-- DEBUT TROISIEME SECTION *fidelity prog -->
+    <section class="fidelity_prog">
+        <div class="div1">
+            <img src="./img8.png" >
+            <button><span>rejoindre</span></button>
+        </div>
+        <div class="div2">
+            <img src="./img7.png" >
+        </div>
+        <div class="div3">
+            <img src="./img9.png" >
+            <button><span>voir tous les avantages</span></button>
+        </div>
+    </section>
+    <!-- FIN TROISIEME SECTION *fidelity prog -->
+
+
+    <!-- DEBUT QUATRIEME SECTION *little food -->
+        <section class="little-food">
+            <h1>une petite ou grosse faim ? 🍔</h1>
+            <div class="little-food_box">
+                <div class="box">
+                    <h3>king nuggets</h3>
+                    <img src="./img12.webp" >
+                </div>
+                <div class="box">
+                    <h3>king fusion lion</h3>
+                    <img src="./img11.webp" >
+                </div>
+                <div class="box">
+                    <h3>chiken louisiane <br> steakhouse</h3>
+                    <img src="./img13.webp" >
+                </div>
+                <div class="box">
+                    <h3>double steakhouse</h3>
+                    <img src="./img14.webp" >
+                </div>
+            </div>
+        </section>
+    <!-- FIN QUATRIEME SECTION *little food -->
+
+
+
+    <!-- DEBUT DU FOOTER -->
+        <footer>
+            <div class="div1">
+                <p>Qui nous aimons suivre !</p>
+                <div class="icones_social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <p>King dans votre poche</p>
+                <div>
+                    <img src="./app_store.png" >
+                    <img src="./play_store.png" >
+                </div>
+            </div>
+            <hr>
+            <div class="div2">
+                <div>
+                    <h3>produit</h3>
+                    <ul>
+                        <a href="#">Catalogue produit</a>
+                        <a href="#">Nos burger</a>
+                        <a href="#">Nos menu</a>
+                    </ul>
+                </div>
+                <div>
+                    <h3>famille</h3>
+                    <ul>
+                        <a href="#">Catalogue produit</a>
+                        <a href="#">Nos burger</a>
+                        <a href="#">Nos menu</a>
+                    </ul>
+                </div>
+                <div>
+                    <h3>service</h3>
+                    <ul>
+                        <a href="#">Catalogue produit</a>
+                        <a href="#">Nos burger</a>
+                        <a href="#">Nos menu</a>
+                    </ul>
+                </div>  
+                <div>
+                    <h3>informationlégale</h3>
+                    <ul>
+                        <a href="#">Catalogue produit</a>
+                        <a href="#">Nos burger</a>
+                        <a href="#">Nos menu</a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="div3">
+                <p>Pour votre santé, mangez au moins cinq fruits et légumes par jours. www.mangerburger.fr</p>
+                <p>&copy;2024 Ernest Dev</p>
+            </div>
+        </footer>
+    <!-- FIN DU FOOTER -->
+</body>
+</html>

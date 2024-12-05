@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Airtravel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- DEBUT HEADER -->
+    <header>
+        
+        <div class="logo">
+            <a href="index.html"><span>Air</span>Travel</a>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="#a-propos">à propos</a></li>
+            <li><a href="#popular-destination">destination</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+        <a href="#" class="btn-reservation ">Reserver Maitenant</a>
+
+        <div class="responsive-menu"></div>    <!--on la cree pour le responsive  -->
+    </header>
+    <!-- FIN HEADER -->
+
+
+    <!-- DEBUT PREMIERE SECTION *acceuil  -->
+
+    <section id="home">
+        <h2>Nous suivre</h2>
+        <h4>Voyage en securité</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores mollitia libero neque aspernatur voluptates o.</p>
+        <p>sit amet consectetur adipisicing elit. Maiores mollitia libero neque aspernatur voluptates o</p>
+        <a href="#" class="btn-reservation home-btn">Reserver Maitenant</a> <!-- lui seul il 2 nom de classe: le 1er lui permet d'avoir la mises en forme du bouton faire dans le 'header' et le 2e de faire lui mm ses proepe modification  -->
+        <div class="find_trip">
+            <form action="">
+                <div>
+                    <label >Pays</label>
+                    <input type="text" placeholder="Entrer un Pays">
+                </div>
+                <div>
+                    <label >Ville</label>
+                    <input type="text" placeholder="Entrer une ville">
+                </div>
+                <div>
+                    <label >Region</label>
+                    <input type="text" placeholder="Entrer un region">
+                </div>
+                <input type="submit" value="voir">
+            </form>
+        </div>
+    </section>
+
+    <!-- FIN PREMIERE SECTION *acceuil  -->
+
+    <!-- DEBUT DEUXIEME SECTION * a propos-->
+    <section id="a-propos">
+        <h1 class="title">à propos</h1>
+        <div class="img-desc">
+            <div class="left">
+                <video src="./video.mp4" autoplay loop></video>
+            </div>
+            <div class="right">
+                <h3>Nous voyageons pour chercher d'autre etats, d'autres vie, d'autres ames</h3>
+                <p>Lorem ipsum dolor sit amet consectetur a Voluptatem corrupti voluptate repudiandae minima vel harum quis dolorem.</p>
+                <a href="#">Lire Plus</a>
+            </div>
+        </div>
+        
+    </section>
+    <!-- FIN DEUXIEME SECTION* a propos -->
+
+
+
+    <!-- DEBUT TROISIEME SECTION *destination css-->
+    <section id="popular-destination">
+        <h1 class="title">destinations populaires</h1>
+        <div class="content">
+            <!-- box -->
+            <div class="box">
+                <img src="./paris.jpg" >
+                <div class="content">
+                    <div>                 <!--  on a mit cet div la car si on centre verticalementt les text la avec 'align-items: center;' dans <div class="content"> , ce 'div' la sera centrer au milieu d'ou les text aussi -->
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni provident quod ?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum totam, nesciunt</p>
+                        <a href="#">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box">
+                <img src="./moscou.jpg" >
+                <div class="content">
+                    <div>
+                        <h4>Moscou</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni provident quod ?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum totam, nesciunt </p>
+                        <a href="#">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box">
+                <img src="./Miami.jpg" >
+                <div class="content">
+                    <div>
+                        <h4>Miami</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni provident quod ?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum totam, nesciunt</p>
+                        <a href="#">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box">
+                <img src="./los-angeles.jpg" >
+                <div class="content">
+                    <div>
+                        <h4>los-angeles</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni provident quod ?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum totam, nesciunt</p>
+                        <a href="#">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box">
+                <img src="./tokio.jpg" >
+                <div class="content">
+                    <div>
+                        <h4>Tokio</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni provident quod ?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum totam, nesciunt</p>
+                        <a href="#">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+            <!-- box -->
+            <div class="box">
+                <img src="./rome.jpg" >
+                <div class="content">
+                    <div>
+                        <h4>Rome</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni provident quod ?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum totam, nesciunt</p>
+                        <a href="#">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- box -->
+        </div>
+    </section>
+    <!-- FIN TROISIEME SECTION *destination css-->
+
+
+
+    <!-- DEBUT QUATRIEME SECTION *contact-->
+    
+    <section id="contact">
+        <h1 class="title">Contact</h1>
+        <form action="">
+            <div class="left-right">
+                <div class="left">
+                    <label >Nom Complet</label>
+                    <input type="text">
+                    <label >Objet</label>
+                    <input type="text">
+                    <label >Email</label>
+                    <input type="text">
+                    <label >Message</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="right">
+                    <label >Numero</label>
+                    <input type="text">
+                    <label >Date</label>
+                    <input type="text">
+                    <label >Autre detail</label>
+                    <input type="text">
+                    <label >Adresse</label>
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+            </div>
+            <button>Envoyer</button>
+        </form>
+    </section>
+    <!-- FIN QUATRIEME SECTION *contact-->
+
+
+    <!-- DEBUT FOOTER -->
+    
+    <footer>
+        <p>Realisé par <span>Ernest</span> | Tous les droits sont réservés.</p>
+    
+    </footer>
+
+    <!-- FIN FOOTER -->
+
+    <!-- js -->
+    <script>
+        var  togggle_menu = document.querySelector('.responsive-menu');
+        var  menu = document.querySelector('.menu');
+        togggle_menu.onclick= function(){
+            togggle_menu.classList.toggle('active')
+            menu.classList.toggle('responsive')
+        }
+    </script>
+
+
+    <!-- js -->
+</body>
+</html>

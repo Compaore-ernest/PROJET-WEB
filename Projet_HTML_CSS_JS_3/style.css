@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* INITILISATION */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;   /* ????? */
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9px;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+}
+body{
+    background-color: #111;
+}
+a{
+    text-decoration: 0;
+}
+
+section{
+    margin-top: 50px;
+}
+
+/* INITILISATION */
+
+/* DEBUT HEADER */
+header{
+    background-color: #222;
+    position: fixed;           /*  Meme si on scroll on puisse voir toujours le navbar */
+    top: 0;                     
+    left: 0;                    /* les 3 (top, left,right) on peut les remplacer par ( width: 100%;) */
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 5%;
+
+}
+
+header .logo a{
+    font-size: 25px;
+    color: #29d9d5;
+    
+}
+
+header .logo a span{
+    color: #fff;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu li{
+    margin: 0 15px ;
+    list-style: none;
+}
+
+.menu li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.btn-reservation{
+    color: #29d9d5;
+    font-size: 14px;
+    border: 2px solid #29d9d5;
+    padding: 5px 20px;
+    transition: 0.5s;
+}
+
+
+.btn-reservation:hover{
+    background-color: #29d9d5;
+    color: #fff;
+}
+
+
+/* FIN HEADER */
+
+
+
+
+/* DEBUT PREMIER SECTION */
+#home{
+    background: linear-gradient(rgba(0,0,0,0.1),#333), url("./img1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;                     /*  si on met sa c'est quee on veut deplacer ses enfant */
+}
+
+#home h2{
+    font-size: 45px;
+    margin-bottom: 10px;
+     -webkit-text-stroke: #fff 0.02px;   /* Pour rendre le text creux */
+    color:transparent;
+}
+
+#home h4{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+#home p{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.home-btn{
+    margin-bottom: 20px;
+}
+
+.find_trip{
+    background-color: #222;
+    padding: 20px;
+    width: 70%;
+    position: absolute;
+    bottom: -50px;
+
+}
+.find_trip form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+.find_trip form div, .find_trip form input[type="submit"] {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+
+}
+.find_trip form label{
+    color: #999;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.find_trip form input {
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 1px solid #29d9d5;
+    outline: 0;
+    width: 100%;
+    font-size: 13px;
+    color: #fff;
+}
+.find_trip form input[type="submit"] {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #29d9d5;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.find_trip form input[type="submit"]:hover{
+    box-shadow: 0 0 10px #29d9d5;
+}
+
+
+
+
+/* FIN PREMIER SECTION */
+
+
+
+
+/* DEBUT DEUXIEME SECTION */
+#a-propos{
+    margin-top: 150px;
+    padding: 0 10%;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.title{
+    text-transform: capitalize;
+    margin: 70px 0;
+    font-weight: bold;
+    color: #29d9d5;
+     position: relative;        /*Il a mit relative a cause de "::after" */
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.title::after{
+    position: absolute;
+    left: -15px;
+    content: "";
+    height: 100%;
+    background-color: #fff;
+    width: 5px;
+
+}
+
+
+.img-desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.img-desc .left{
+    position: relative;
+    margin-left: 10px;
+    height: 250px;
+    width: 40%;
+}
+.img-desc .right{
+    width: 57%;
+
+}
+
+.img-desc .left video{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-shadow: 0 0 10px #29d9d5;
+
+}
+
+/* .img-desc .left::after{
+    position: absolute;
+    bottom: -10px;
+    left: 40px;
+    content: "";
+    height: 100%;
+    background-color: #29d9d5;
+    width: 75%;
+    z-index: -1;
+} */
+.img-desc .right h3{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 20px;
+    
+}
+.img-desc .right p{
+    color: #999;
+    font: 14px;
+    margin-bottom: 36px;
+}
+
+.img-desc .right a{
+    border: 1px solid #29d9d5;
+    color: #29d9d5;
+    font-size: 14px;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+/* FIN DEUXIEME SECTION */
+
+
+
+
+/* DEBUT TROISIEME SECTION */
+
+#popular-destination{
+    padding: 0 10%;         /* On met toujours sa "padding: 0 10%; " sur la "section" si on veut mettre des image cote a cote  */
+    margin-bottom: 50px;
+}
+
+#popular-destination .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap: 32px;
+} 
+#popular-destination .content .box{
+    overflow: hidden;                /*  on utilise 'hidden' pour cacher tous ce qui sort du "<div class="box">"  */
+    position: relative;
+    height: 250px;
+    transition: 0.5s;
+    
+}
+
+
+#popular-destination .content .box img{
+    height: 100%;
+     width: 100%;                          /* on a mit le 'height' et le 'width' a "100%" pour que l'image prend tous la longueur et la largeur du "<div class="box">" et que le <div class="content"> soit cacher par 'hidden' */
+    object-fit: cover;
+}
+.box .content{
+    position: absolute;
+    top: 0;                        /*   Comme le <div class="content"> est cacher pour qu'on puisse le voir, on la ramener en haut en le supperposant sur l'image avec "top: 0;" et "left: 0;" */
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+    transform: translateX(100%);   /* On la mit pour le "hover". comme mon <div class="content"> est sur l'image, je le faire descendre a 100% pourqu'on ne le voir plus, la comme ca je vais le fais venir avec le "hover" */
+    transition: 0.5s;
+}
+.box:hover .content{
+    transform: translateX(0);
+}
+.box .content h4{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.box .content p:nth-child(3) {
+    margin-bottom: 25px;
+}
+.box .content a{
+    margin-top: 60px;
+    padding: 10px 60px;
+    border: 2px solid #29d9d5;
+    color: #29d9d5;
+    font-weight: bold;
+}
+.box:hover{
+    box-shadow: 0 0 10px #29d9d5;
+}
+
+/* FIN TROISIEME SECTION */
+
+
+/* DEBUT QUATRIEME SECTION */
+#contact{
+    padding: 0 10%;
+    margin-bottom: 50px;
+    height: 90vh;
+
+}
+#contact form{
+    background-color: #fff;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.left-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.left-right .left , .left-right .right{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+#contact form label{
+    font-size: 14px;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+#contact form input{
+    padding: 8px;
+    outline: 0;
+    border: 1px solid #999;
+}
+
+textarea{
+    height: 150px;
+    resize: none;  /*  pour enlever les 3 trait qui sont en bas de commentaire la  */
+    outline: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+#contact form input:focus , textarea:focus{
+    border: 1px solid #29d9d5;
+}
+
+iframe{
+    height: 150px;
+    width: 100%;
+}
+#contact button{
+    width: fit-content;
+    padding: 8px 40px;
+    background-color: #111;
+    border:1px solid #111;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+#contact button:hover{
+    letter-spacing: 1px;
+}
+/* FIN QUATRIEME SECTION */
+
+/* ___IMPORTANT ___*/
+/* Pour faire le classemnt des different element tu dois utiliser:
+(display: flex;. flex-direction: column;/  justify-content: space-between;/ align-items: center; / padding/ margin/padding-(left,bottom,right,top)/margin-(left,bottom,right,top) ......) pour pouvoir bien organiser.
+
+la major partir on utilise (position:absolue;/ top/ right/ left/bottom/) pour faire sortir de l'element parent ou si on veux mettre un "::after" ou un "::before" 
+ou si on veut faire comme la section 3 c-a-d cacher l'image et le faire apparaitre apres. */
+/* IMPORTANT */
+
+
+/* DEBUT FOOTER */
+footer{
+    width: 100%;
+    background-color: #222;
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer p{
+    color: #fff;
+}
+footer p span{
+    color: #29d9d5;
+}
+/* FIN FOOTER */
+
+/* __________________________________________________________________________________________________ */
+
+
+
+/* RESPONSIVE */
+
+@media (max-width:750px){
+    /* header */
+    header .menu{
+        display: none;
+    }
+    .btn-reservation{
+        display: none;
+    }
+    /* header */
+
+    /*1er section* home */
+    #home h2{
+        font-size: 18px;
+        -webkit-text-stroke: 0;
+        color: #fff;
+    }
+    #home h4{
+        font-size: 28px;
+    }
+    #home p{
+        text-align: center;
+        font-size: 10px;
+    }
+    .find_trip{
+        width: 100%;
+        height: 200px;
+
+    }
+    .find_trip form{
+         flex-wrap: wrap;  /* ????? */
+    }
+    .find_trip form div {
+        margin-top: 10px;
+        flex-direction: column;
+        width: 47%;
+    }
+    .find_trip form input [type="submit"]{
+        width: 47%;
+
+    }
+    .home-btn{
+         display: block; /*il permet de le maitenire mm si on a mit une "display: none;" si tous les bouton qui porte le nom de "btn-reservation" or ce bouton ci a 2 nom on a utiliser le 2eme pour le faire veni avec "display: block;" */
+    }
+    /*1er section* home */
+
+    /* 2em section*a propos  */
+    .img-desc{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .img-desc .left, .img-desc .right{
+        width: 100%;
+    }
+    .img-desc .left video{
+        width: 100%;
+    }
+    .img-desc .left::after{
+        background-color: transparent;
+    }
+    .img-desc .right{
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    /* 2em section*a propos  */
+
+    /* ___________________________________ */
+
+
+
+    /* Menu du header */
+
+/* ____CREATION DES 3 TRAITS___ */
+    .responsive-menu{                  /*   On crais d'abord cette class vide dans le 'header' */
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+        
+    }
+    .responsive-menu::after{
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: #29d9d5; /* on a fait un caree de "height: 3px;/width: 28px;" en le coloriant on fait le 1e trait  */
+        width: 28px;
+         transform: translateY(-10px); /*il  a permit que le 1er trait monte de 10px */
+         box-shadow: 0 10px 0 #29d9d5; /*lui il fait le 2em trait quand le 10px est placer en 2eme positoin  */
+        transition: 0.5s;
+    }
+
+    .responsive-menu::before{
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: #29d9d5;
+        width: 28px;
+        transform: translateY(10px); /*il  a permit que le 3em trait descent de 10px */
+        transition: 0.5s;
+    }
+/* ____CREATION DES 3 TRAITS___ */
+
+
+/* ____TRANSFORMATION DES TROIS TRAITS EN CROIX___ */
+    /* --Appelation de la fonction "active" pour si on clique le menu devient une croix */
+    .responsive-menu.active::after{
+        box-shadow: 0 0 0 #29d9d5;   /*On a enlever le 2em trait et on a faire une rotation du 1er et du 2em */
+        transform: rotate(45deg);
+    }
+    .responsive-menu.active::before{
+        
+        transform: rotate(-45deg);
+    }
+/* ____TRANSFORMATION DES TROIS TRAITS EN CROIX___ */
+
+
+/* ____CLIQUER SUR LES 3 TRAIT POUR FAIRE APPRAITRE LE MENU ET ENSUITE FAIRE DES ANIMATIONS___ */
+    header .menu.responsive{
+        display: flex;
+        position: absolute;
+        right: 0;
+        top:50px;
+        flex-direction: column;
+        background-color: #222;
+         align-items: unset;         /*sa veut dit il doit tous commencer la mm colonne  */
+         animation: animate-menu 1s forwards;              /*appelle de la fonction animation qui est en bas du code  */
+        }
+    header .menu.responsive li{
+        margin: 20px;
+        width: 100px;
+        padding-left: 20px;
+    }
+
+
+
+    /* il permet lorsqu'on clique sur les 3 traits de deplace le menu au miliau pour cela il faut appeler la fontion la dans "header .menu.responsive"*/
+    @keyframes animate-menu {
+        0%{
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(100%);
+        }
+    }
+/* ____CLIQUER SUR LES 3 TRAIT POUR FAIRE APPRAITRE LE MENU ET ENSUITE FAIRE DES ANIMATIONS___ */
+
+
+    /* Menu du header */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+/* RESPONSIVE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

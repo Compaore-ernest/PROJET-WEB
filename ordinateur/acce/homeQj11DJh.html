@@ -1,0 +1,292 @@
+<html><head><base href="https://ai-computer-recommendations.com/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Computer Recommendations</title>
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2ecc71;
+        --text-color: #333;
+        --bg-color: #f9f9f9;
+    }
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px;
+    }
+    
+    header {
+        background: var(--primary-color);
+        color: #fff;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: var(--secondary-color) 3px solid;
+    }
+    
+    header a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    
+    header li {
+        float: left;
+        display: inline;
+        padding: 0 20px 0 20px;
+    }
+    
+    header #branding {
+        float: left;
+    }
+    
+    header #branding h1 {
+        margin: 0;
+    }
+    
+    header nav {
+        float: right;
+        margin-top: 10px;
+    }
+    
+    header .highlight, header .current a {
+        color: var(--secondary-color);
+        font-weight: bold;
+    }
+    
+    header a:hover {
+        color: #ffffff;
+        font-weight: bold;
+    }
+    
+    #showcase {
+        min-height: 400px;
+        background: url('showcase.jpg') no-repeat 0 -400px;
+        text-align: center;
+        color: #fff;
+    }
+    
+    #showcase h1 {
+        margin-top: 100px;
+        font-size: 55px;
+        margin-bottom: 10px;
+    }
+    
+    #showcase p {
+        font-size: 20px;
+    }
+    
+    #boxes {
+        margin-top: 20px;
+    }
+    
+    #boxes .box {
+        float: left;
+        text-align: center;
+        width: 30%;
+        padding: 10px;
+    }
+    
+    #boxes .box img {
+        width: 90px;
+    }
+    
+    #testimonials {
+        background: #f4f4f4;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    
+    #testimonials h2 {
+        text-align: center;
+    }
+    
+    .testimonial {
+        background: #fff;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    #architecture {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    #contact {
+        background: var(--primary-color);
+        color: #fff;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    
+    footer {
+        padding: 20px;
+        margin-top: 20px;
+        color: #ffffff;
+        background-color: var(--text-color);
+        text-align: center;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    
+    .fade-in {
+        animation: fadeIn 1s ease-in;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">AI</span> Computer Recommendations</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>AI-Powered Computer Recommendations</h1>
+            <p>Get personalized computer recommendations tailored to your needs using cutting-edge AI technology.</p>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="order.svg" alt="Computer order icon">
+                <h3>Order & Delivery</h3>
+                <p>Order your recommended computer and have it delivered to your town.</p>
+            </div>
+            <div class="box">
+                <img src="payment.svg" alt="Payment icon">
+                <h3>Flexible Payment</h3>
+                <p>Pay only after you've received and inspected your computer.</p>
+            </div>
+            <div class="box">
+                <img src="cancel.svg" alt="Cancel order icon">
+                <h3>Easy Cancellation</h3>
+                <p>Cancel your order at any time before delivery, no questions asked.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="business-services">
+        <div class="container">
+            <h2>Business Services</h2>
+            <p>Are you a company looking for computer solutions? We offer specialized services for businesses, including bulk recommendations and cost-effective advice. <a href="#contact">Get in touch</a> to learn more about our corporate offerings.</p>
+        </div>
+    </section>
+
+    <section id="system-description">
+        <div class="container">
+            <h2>How It Works</h2>
+            <p>Our AI-powered system uses advanced language models and machine learning algorithms to analyze your requirements and provide tailored computer recommendations. By leveraging the power of LangChain and state-of-the-art Language Models (LLMs), we ensure that each recommendation is personalized to your specific needs and preferences.</p>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial fade-in">
+                <p>"The AI recommendation was spot-on! I got exactly the computer I needed for my work."</p>
+                <cite>- John D., Graphic Designer</cite>
+            </div>
+            <div class="testimonial fade-in">
+                <p>"As a small business owner, the company-wide recommendation service saved us time and money."</p>
+                <cite>- Sarah L., Tech Startup CEO</cite>
+            </div>
+        </div>
+    </section>
+
+    <section id="architecture">
+        <div class="container">
+            <h2>System Architecture</h2>
+            <svg width="600" height="300" viewBox="0 0 600 300">
+                <rect x="10" y="10" width="120" height="60" rx="10" ry="10" fill="#3498db"/>
+                <text x="70" y="45" text-anchor="middle" fill="white">User Requirements</text>
+                
+                <rect x="240" y="10" width="120" height="60" rx="10" ry="10" fill="#e74c3c"/>
+                <text x="300" y="45" text-anchor="middle" fill="white">LangChain</text>
+                
+                <rect x="470" y="10" width="120" height="60" rx="10" ry="10" fill="#2ecc71"/>
+                <text x="530" y="45" text-anchor="middle" fill="white">LLMs</text>
+                
+                <rect x="240" y="230" width="120" height="60" rx="10" ry="10" fill="#f39c12"/>
+                <text x="300" y="265" text-anchor="middle" fill="white">Result</text>
+                
+                <line x1="130" y1="40" x2="240" y2="40" stroke="black" stroke-width="2"/>
+                <line x1="360" y1="40" x2="470" y2="40" stroke="black" stroke-width="2"/>
+                <line x1="530" y1="70" x2="530" y2="150" stroke="black" stroke-width="2"/>
+                <line x1="530" y1="150" x2="300" y2="150" stroke="black" stroke-width="2"/>
+                <line x1="300" y1="150" x2="300" y2="230" stroke="black" stroke-width="2"/>
+            </svg>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="partners">
+        <div class="container">
+            <h2>Our Partners</h2>
+            <div class="partner-logos">
+                <img src="partner1.svg" alt="Partner 1 logo" width="100" height="100">
+                <img src="partner2.svg" alt="Partner 2 logo" width="100" height="100">
+                <img src="partner3.svg" alt="Partner 3 logo" width="100" height="100">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 AI Computer Recommendations. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const testimonials = document.querySelectorAll('.testimonial');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            });
+
+            testimonials.forEach(testimonial => {
+                observer.observe(testimonial);
+            });
+        });
+    </script>
+</body>
+</html>

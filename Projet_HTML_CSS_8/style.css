@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Island+Moments&family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* INITIALISATION  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #999;
+    border-radius: 6px;
+}
+/* INITIALISATION  */
+
+
+/* HEADER  */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+header .logo span{
+    color: #f46a06;
+}
+.menu_number{
+    display: flex;
+    align-items: center;
+}
+.menu_number .number{
+    margin-left: 90px;
+}
+.menu{
+    display: flex;
+
+}
+.menu li {
+    margin-left: 25px;
+    list-style: none;
+}
+.menu li a{
+    font-size: 12px;
+    text-decoration: 0;
+    color: #f46a06;
+    text-transform: capitalize    ;
+}
+/* HEADER  */
+
+
+
+/* 1e SECTION  */
+
+/* 1e SECTION  */
+
+
+/* 2e SECTION  */
+
+/* 2e SECTION  */
+
+
+/* 3e SECTION  */
+
+/* 3e SECTION  */
+
+
+/* 4e SECTION  */
+
+/* 4e SECTION  */
+
+
+/* 1e SECTION  */
+
+/* 1e SECTION  */

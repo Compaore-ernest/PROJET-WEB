@@ -1,0 +1,240 @@
+<html><head><base href="https://ai-computer-recommender.com/recommendation-form">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Computer Recommender - Get Your Personalized Recommendation</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f9fa;
+    }
+    .navbar-brand img {
+        height: 40px;
+    }
+    .form-container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        padding: 30px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .form-title {
+        color: #007bff;
+        margin-bottom: 30px;
+    }
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+    .progress {
+        height: 5px;
+        margin-bottom: 20px;
+    }
+    .form-section {
+        display: none;
+    }
+    .form-section.active {
+        display: block;
+    }
+    .result-card {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 30px;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img src="https://via.placeholder.com/150x50?text=AI+Comp+Rec" alt="AI Computer Recommender Logo" width="150" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 form-container">
+                <h2 class="text-center form-title">Get Your Personalized Computer Recommendation</h2>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <form id="recommendationForm">
+                    <div class="form-section active" id="section1">
+                        <h4>Step 1: Basic Information</h4>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <button type="button" class="btn btn-primary next-btn">Next</button>
+                    </div>
+
+                    <div class="form-section" id="section2">
+                        <h4>Step 2: Usage Requirements</h4>
+                        <div class="mb-3">
+                            <label for="primaryUse" class="form-label">Primary Use</label>
+                            <select class="form-select" id="primaryUse" required>
+                                <option value="">Choose...</option>
+                                <option value="general">General Use / Web Browsing</option>
+                                <option value="office">Office Work</option>
+                                <option value="gaming">Gaming</option>
+                                <option value="design">Graphic Design</option>
+                                <option value="development">Software Development</option>
+                                <option value="video">Video Editing</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="budget" class="form-label">Budget Range</label>
+                            <select class="form-select" id="budget" required>
+                                <option value="">Choose...</option>
+                                <option value="budget">Budget ($500 - $800)</option>
+                                <option value="midrange">Mid-Range ($800 - $1200)</option>
+                                <option value="highend">High-End ($1200 - $2000)</option>
+                                <option value="premium">Premium ($2000+)</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-secondary prev-btn">Previous</button>
+                        <button type="button" class="btn btn-primary next-btn">Next</button>
+                    </div>
+
+                    <div class="form-section" id="section3">
+                        <h4>Step 3: Specific Requirements</h4>
+                        <div class="mb-3">
+                            <label class="form-label">Portability</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="portability" id="desktop" value="desktop" required>
+                                <label class="form-check-label" for="desktop">Desktop (Not portable)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="portability" id="laptop" value="laptop" required>
+                                <label class="form-check-label" for="laptop">Laptop (Portable)</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="storage" class="form-label">Minimum Storage Capacity</label>
+                            <select class="form-select" id="storage" required>
+                                <option value="">Choose...</option>
+                                <option value="256">256 GB</option>
+                                <option value="512">512 GB</option>
+                                <option value="1000">1 TB</option>
+                                <option value="2000">2 TB or more</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Additional Requirements</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="highPerformance" value="highPerformance">
+                                <label class="form-check-label" for="highPerformance">High Performance</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="longBattery" value="longBattery">
+                                <label class="form-check-label" for="longBattery">Long Battery Life</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="quietOperation" value="quietOperation">
+                                <label class="form-check-label" for="quietOperation">Quiet Operation</label>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-secondary prev-btn">Previous</button>
+                        <button type="submit" class="btn btn-primary">Get Recommendation</button>
+                    </div>
+                </form>
+
+                <div id="result" class="result-card" style="display: none;">
+                    <h4>Your Personalized Recommendation</h4>
+                    <div id="recommendationResult"></div>
+                    <button id="orderBtn" class="btn btn-success mt-3">Order This Computer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2023 AI Computer Recommender. All rights reserved.</p>
+            <a href="/privacy-policy" class="text-white">Privacy Policy</a> | 
+            <a href="/terms-of-service" class="text-white">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let currentSection = 1;
+            const totalSections = 3;
+
+            function updateProgress() {
+                let progress = ((currentSection - 1) / (totalSections - 1)) * 100;
+                $('.progress-bar').css('width', progress + '%').attr('aria-valuenow', progress);
+            }
+
+            $('.next-btn').click(function() {
+                if (currentSection < totalSections) {
+                    $('#section' + currentSection).removeClass('active');
+                    currentSection++;
+                    $('#section' + currentSection).addClass('active');
+                    updateProgress();
+                }
+            });
+
+            $('.prev-btn').click(function() {
+                if (currentSection > 1) {
+                    $('#section' + currentSection).removeClass('active');
+                    currentSection--;
+                    $('#section' + currentSection).addClass('active');
+                    updateProgress();
+                }
+            });
+
+            $('#recommendationForm').submit(function(e) {
+                e.preventDefault();
+                // Here you would typically send the form data to your server for processing
+                // For this example, we'll just show a mock recommendation
+                $('#result').show();
+                $('#recommendationResult').html(`
+                    <p>Based on your requirements, we recommend:</p>
+                    <h5>SuperTech Pro X1</h5>
+                    <ul>
+                        <li>Intel Core i7 Processor</li>
+                        <li>16GB RAM</li>
+                        <li>512GB SSD</li>
+                        <li>NVIDIA GeForce RTX 3060</li>
+                        <li>15.6" 4K Display</li>
+                    </ul>
+                    <p>Price: $1,299</p>
+                `);
+            });
+
+            $('#orderBtn').click(function() {
+                alert('Thank you for your order! We will process it and contact you soon for delivery details.');
+            });
+        });
+    </script>
+</body></html>

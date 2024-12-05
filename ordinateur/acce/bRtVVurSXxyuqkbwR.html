@@ -1,0 +1,191 @@
+<html><head><base href="https://ai-computer-recommender.com/recommendation-form">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Computer Recommendation Form | AI Computer Recommender</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f9fa;
+    }
+    .navbar-brand img {
+        height: 40px;
+    }
+    .form-container {
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    .range-slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 10px;
+        border-radius: 5px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        transition: opacity .2s;
+    }
+    .range-slider:hover {
+        opacity: 1;
+    }
+    .range-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #007bff;
+        cursor: pointer;
+    }
+    .range-slider::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #007bff;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img src="https://via.placeholder.com/150x50?text=AI+Comp+Rec" alt="AI Computer Recommender Logo" width="150" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#system">Our System</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/privacy-policy">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="form-container p-5">
+                    <h2 class="text-center mb-4">Computer Recommendation Form</h2>
+                    <p class="text-center mb-5">Fill out this form to get your personalized AI-powered computer recommendation.</p>
+                    <form id="recommendationForm">
+                        <div class="mb-4">
+                            <label for="budgetMin" class="form-label">Minimum Budget ($)</label>
+                            <input type="number" class="form-control" id="budgetMin" name="budgetMin" min="0" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="budgetMax" class="form-label">Maximum Budget ($)</label>
+                            <input type="number" class="form-control" id="budgetMax" name="budgetMax" min="0" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="ram" class="form-label">RAM (GB)</label>
+                            <input type="range" class="range-slider" id="ram" name="ram" min="4" max="64" step="4">
+                            <output for="ram" id="ramOutput">16 GB</output>
+                        </div>
+                        <div class="mb-4">
+                            <label for="storage" class="form-label">Storage (GB)</label>
+                            <input type="range" class="range-slider" id="storage" name="storage" min="128" max="2048" step="128">
+                            <output for="storage" id="storageOutput">512 GB</output>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label">Primary Use</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="primaryUse" id="gaming" value="gaming" required>
+                                <label class="form-check-label" for="gaming">Gaming</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="primaryUse" id="office" value="office">
+                                <label class="form-check-label" for="office">Office Work</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="primaryUse" id="design" value="design">
+                                <label class="form-check-label" for="design">Graphic Design</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="primaryUse" id="programming" value="programming">
+                                <label class="form-check-label" for="programming">Programming</label>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="brand" class="form-label">Preferred Brand</label>
+                            <select class="form-select" id="brand" name="brand">
+                                <option value="">No preference</option>
+                                <option value="dell">Dell</option>
+                                <option value="hp">HP</option>
+                                <option value="lenovo">Lenovo</option>
+                                <option value="apple">Apple</option>
+                                <option value="asus">Asus</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="additionalRequirements" class="form-label">Additional Requirements</label>
+                            <textarea class="form-control" id="additionalRequirements" name="additionalRequirements" rows="3" placeholder="E.g., specific graphics card, screen size, etc."></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg px-5">Get Recommendation</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2023 AI Computer Recommender. All rights reserved.</p>
+            <a href="/privacy-policy" class="text-white">Privacy Policy</a> | 
+            <a href="/terms-of-service" class="text-white">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Update RAM output
+            $('#ram').on('input', function() {
+                $('#ramOutput').val(this.value + ' GB');
+            });
+
+            // Update Storage output
+            $('#storage').on('input', function() {
+                $('#storageOutput').val(this.value + ' GB');
+            });
+
+            // Form submission
+            $('#recommendationForm').on('submit', function(e) {
+                e.preventDefault();
+                // Here you would typically send the form data to your server
+                // For this example, we'll just show an alert
+                alert('Thank you for submitting your requirements. We are processing your recommendation.');
+                // In a real application, you would send this data to your AI system
+                // and then redirect the user to a results page or show the recommendation on this page
+            });
+
+            // Validate that max budget is greater than min budget
+            $('#budgetMax').on('change', function() {
+                var minBudget = parseInt($('#budgetMin').val());
+                var maxBudget = parseInt($(this).val());
+                if (maxBudget <= minBudget) {
+                    alert('Maximum budget must be greater than minimum budget.');
+                    $(this).val('');
+                }
+            });
+        });
+    </script>
+</body></html>

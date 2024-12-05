@@ -1,0 +1,414 @@
+/*--- DEBUT NEVBAR ---*/
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+
+
+
+}
+nav ul{
+    margin: 0px;
+    padding: 0px;
+    /* overflow: hidden;*/ /*lorsque tu utilise un float il permet de cacher tous ce qui se trouve en bas et a droite des elemments 
+    c'est a dire que mem si tu deplace c mmes element de 50px en bas elles ne s'afficherons pas.pour cela on la mis en commentaire car elle est un probleme pour le login */
+    margin: 0 200px;
+    height: 70px;
+    
+}
+/* La plus part du temps on met un cursor sur les element <li> du Navbar pour que le cuseur se transforme en main */
+nav li{
+    list-style: none;
+    float: left;
+    
+    color: black;
+    display: block;
+    margin: 10px 20px;
+    position: relative;
+    top: 40px;
+    height: 30px;
+    transition:0.2s ease-out ;
+    cursor: pointer;
+}
+nav li:hover{
+    transform: scale(1.06); /* pour que lorsque tu me le cursor sa devient un peut grand */
+}
+
+
+/*----------- ON VISE INDIVIDUELLEMENT CEUX QUI SONT DANS LE NAVBAR -------*/
+
+
+/* -----------1er ON INITIALISE LE BOUTTON---- */
+
+/* margin: 8px 15px; pour deplacer l'objet de son x et son y */
+button{
+    background-color: red;
+    border: 0px;
+    color: white;
+    padding: 8px 15px;  /*Pour augmenter la taille (la hauteur et la longueur) du background */
+    border-radius: 5px ;
+    display: flex;
+    align-items: center;   /* il permet de centrer verticalement dans un background  */
+    text-transform: uppercase;
+    z-index: 1;
+    transition:0.2s ease-out ;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.06); /* pour que lorsque tu me le cursor sa devient un peut grand */
+}
+
+
+
+
+
+/*-------------- 2e ON TRAVAILLE SUR LES DIFFERENT ELLEMENT--- */
+
+/*------LES ELLEMENT DE LA FIN DE LA NAVBAR --*/
+.click-bouton{
+    position: absolute;
+    right: 30px;
+    top: 40px;
+}
+.click{
+    font-size: 15px;
+}
+
+
+/*--------LES ELLEMENT DU MILIEU DE LA NAVBAR-- */
+
+
+.localisation{
+    position: absolute;
+    right: 570px;
+}
+
+.img{
+    height: 28px;
+    position: absolute;
+    right: 690px;
+    top: 45px;
+}
+
+
+
+
+/*------------- LE LOGIN---- */
+
+.fa_couronne{
+    position: relative;
+    padding: 20px;
+    right: -600px;
+    top: -20px;
+    
+    
+}
+
+.login{
+    position: absolute;
+    right: -20px;
+    top: 55px;
+    padding: 40px   ;
+
+    display: none;          /* il perment (display: flex) d'alligner tous les elements d'un div */     /*On a enlever le 'flex' et mit le 'none' car on a besoin qu'il s'affiche lorsque le cursor passe desus et ca on le fais avec 'fa-couronne:hover .login' */
+    flex-direction: column;   /* Et lui il permet de les mettre en colonne  */
+
+    align-items: center;   /* il permet de centrer verticalement chaque elment pour cela il faut mettre d'abord 'display: ;'*/
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    height: 120px;
+    width: 300px;
+}
+
+.login button{
+    width: 100%;
+    background-color: #f7a800;
+    padding: 10px 60px;
+    align-items: center;
+}
+hr{
+    color: black;
+}
+
+.hr{
+    border: 0;
+    margin: 10px 0;
+    width: 100%;
+    background-color: #999;
+    height: 2px;
+}
+.login p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+ .login button:last-child{      /* pour cibler le dernier enfant (element) button */
+     background-color: transparent;  /*pour rendre la couleur transparent */
+    color: #f7a800;
+    border: 1px solid #f7a800;
+}
+
+/*----- pour faire apparaitre le petit carre en haut de login  */
+.login::after{
+     content: "";   /*pour faire apparaitre un petit carré et faire tous ce qui est en bas la pour lee voir */
+    position: absolute;
+    right: 40px;
+    top: -8px;
+    height: 25px;
+    width: 25px;
+     z-index: -3; /* pour le faire apparaitre derierre le login */
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    transform: rotate(50deg);
+}
+.login::before{
+    content: "";   /*pour faire apparaitre un petit carré et faire tous ce qui est en bas la pour lee voir */
+   position: absolute;
+   right: 40px;
+   top: -8px;
+   height: 25px;
+   width: 25px;
+   background-color: #fff;
+   transform: rotate(50deg);
+}
+.fa_couronne:hover .login{
+    display:flex;
+
+}
+
+
+/*---FIN NAVBAR--- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+/*--- DEBUT DE LA PREMIERE SECTION ---*/
+.home{
+    margin-top: 80px;
+    background: url('./img1.webp');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 200px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+/*--- FIN DE LA PREMIERE SECTION ---*/
+
+
+/*--- DEBUT DE LA DEUXIEME SECTION ---*/
+
+.foods{
+    margin: 50px 0;
+     padding: 0 10%;         /* On met toujours sa "padding: 0 10%; " sur "section" si on veut mettre des image cote a cote  */
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;         /*il permet de center horizontalement,  pour sur une ligne et il est utilise pour le 'h' et les 'p'*/
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+.foods p{
+    text-align: center;
+     margin-top: 15px;          /*on les utilise pour agmenter le margin de haut de 15px d'ou on le faire descendre un peu en bas */
+    margin-bottom: 25px;        /*on les utilise pour agmenter le margin de bas de25px d'ou on le faire monter un peu en bas */
+    word-spacing: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.foods-list{
+    display: flex;
+    justify-content: space-between;
+}
+.foods-list .box{
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+.foods-list .box:hover {
+    transform: scale(1.05);
+}
+.foods-list img{
+    box-shadow: 0 0 9px rgba(0,0,0,0.1);
+    width: 450px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#imag5{
+    height: 352px;
+}
+#imag6{
+    height: 352px;
+}
+
+h3{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/*--- FIN DE LA DEUXIEME SECTION ---*/
+
+
+/*--- DEBUT DE LA TROISIEME SECTION ---*/
+.fidelity_prog{
+    margin: 35px 0;
+    height: 350px;
+    /* width: 100%; */
+    width: 1515px;
+    background: url(./img10.png);
+    background-position: center;
+    background-size: cover;         /* ????? */
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fidelity_prog div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     justify-content: center;   /*il permet de centrer dans le background pour cela il faut mettre d'abord 'display: ;' et un 'align-items: center; '*/
+
+}
+.fidelity_prog button{
+    margin-top: 25px;
+    background-color: #f7a800;
+}
+
+.fidelity_prog .div1{
+    width: 300px;
+}
+.fidelity_prog .div2{
+    width: 350px;
+    margin-top: 25px;
+}
+.fidelity_prog .div3{
+    width: 410px;
+}
+
+.fidelity_prog img{
+    width: 100%;
+}
+
+/*--- FIN DE LA TROISIEME SECTION ---*/
+
+
+/*--- DEBUT DE LA QUATRIEME SECTION ---*/
+.little-food{
+    padding: 0 10%;
+}
+
+.little-food img{
+    width: 220px;
+}
+
+.little-food_box{
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 280px;
+}
+
+.little-food_box .box {
+    background-color: #fbf5ee;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    padding: 20px;
+    transition: 0.25s;
+    height: 100%;
+}
+.little-food_box .box:hover{
+    transform: scale(1.05);
+}
+
+.little-food h1{
+    text-decoration: none;
+}
+/*--- FIN DE LA QUATRIEME SECTION ---*/
+
+
+
+
+/* DEBUT DU FOOTER */
+
+footer{
+    background-color: #000;
+    color:#fff;
+    margin-top: 20px;
+    padding: 25px 10%;
+}
+
+footer p {
+    font-size: 15px;
+}
+.icones_social {
+    margin: 20px 0;
+}
+.icones_social i{
+    margin-right: 20px;
+    font-size: 20px;
+}
+footer img{
+    margin-top: 20px;
+    border: 1px solid #fff;
+    height: 50px;
+    cursor: pointer;
+
+}
+footer img:last-child{
+    margin-left:10% ;
+}
+
+footer .div2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .div2 h3{
+    margin-bottom: 10px;
+}
+
+footer .div2 ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+footer .div2 ul a{
+    font-size: 13px;
+    text-decoration: 0;
+    margin-bottom: 5px;
+    transform: 0.5s;
+}
+
+footer .div2 ul a:hover{
+    letter-spacing: 0.5px;
+}
+
+footer .div3 {
+    text-align: center;        /*  on peut l'utiliser dans un div mais pour centrer uniquement les le h ou les p */
+}
+
+footer .div3 p:first-child{
+    font-size: 13px;
+}
+footer .div3 p:last-child{
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+}
+
+
+
+
+/* FIN DU FOOTER */
